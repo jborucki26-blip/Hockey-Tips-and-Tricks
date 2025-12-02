@@ -29,7 +29,6 @@ p {
 
 .flex-container {
     display: flex;
-    gap: 20px;
     justify-content: center;
 }
 
