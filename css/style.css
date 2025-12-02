@@ -1,0 +1,57 @@
+<style>
+body {
+    background-color:cornsilk;
+    font-family: Arial, sans-serif
+    text-align: center;
+}
+</style>
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: darkblue;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+.highlight {
+    color:green;
+    font-weight: bold;
+}
+
+#intro {
+    background-color:cornsilk;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    gap 20px;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: cornsilk;
+        font-size: 16px;
+    }
+
+    maine {
+        flex-direction: column;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .flex-container {
+        flex-direction: cloumn;
+    }
+}
