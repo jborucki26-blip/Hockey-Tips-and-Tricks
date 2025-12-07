@@ -2,43 +2,72 @@ body {
     background-color: cornsilk;
     font-family: Arial, sans-serif;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-h1 {
+/* Headings */
+h1, h2, h4 {
     color: darkblue;
 }
 
-h2 {
-    color: darkblue;
-}
-
+/* Paragraphs */
 p {
     font-size: 18px;
     color: black;
 }
 
+/* Highlighted card */
 .highlight {
     color: darkblue;
     font-weight: bold;
 }
 
+/* Layout sections */
 #intro {
     background-color: cornsilk;
     padding: 20px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
+.flex-container > div {
+    background-color: #fff8dc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
+/* Images */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+footer a:hover {
+    background-color: navy;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
     body {
-        background-color: cornsilk;
         font-size: 16px;
     }
 
-    main {
+    .flex-container {
         flex-direction: column;
         padding: 10px;
     }
@@ -49,9 +78,5 @@ p {
 
     p {
         font-size: 16px;
-    }
-
-    .flex-container {
-        flex-direction: column;
     }
 }
